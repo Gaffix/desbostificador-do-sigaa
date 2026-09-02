@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Desbostificador do Sigaa",
+    "version": "1.0",
+    "description": "Uma extensão para melhorar a experiência de navegação no Sigaa, removendo todos os elementos menos necessários da sua tela!.",
+    "content_scripts": [
+        {
+        "matches": ["*://sig.ifc.edu.br/*"],
+        "css": ["limpar.css"],
+        "js": ["reorganizar.js"]
+        }
+    ]
+}

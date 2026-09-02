@@ -1,0 +1,1 @@
+// Arquivo responsável por manipular o DOM e reorganizar os elementos da página
