@@ -11,6 +11,7 @@ window.addEventListener('load', function() {
 /* DIV menu-dropdown (Ensino, Pesquisa, Extensão...) */
 window.addEventListener('load', function() {
     const lixoDoMenu = [
+        "Pesquisa",
         "Extensão",
         "Ações Associadas",
         "Bolsas",

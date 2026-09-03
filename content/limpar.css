@@ -32,3 +32,10 @@ a[title="Instruções de Acesso ao Portal CAPES fora do IFC"],
 .descricaoOperacao {
     display: none !important;
 }
+
+
+/* DIV Rodapé */
+a[href="/sigaa/verPortalDiscente.do"],
+#rodape {
+    display: none !important;
+}
