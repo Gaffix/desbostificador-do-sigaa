@@ -2,9 +2,19 @@
 
 
 /* DIV Perfil Docente */
-
+a[href="https://ensino.ifc.edu.br/calendarios-academicos/"],
+a[href="https://ensino.ifc.edu.br/wp-content/uploads/sites/37/2022/12/Organizacao-Didatica-dos-Cursos-do-IFC.pdf"],
 #form_links\:forumCursos,
 a[title="Instruções de Acesso ao Portal CAPES fora do IFC"],
 #form_links\:buscarComunidadeVirtual {
+    display: none !important;
+}
+
+/* DIV Cabeçalho */
+#noticias-portal,
+.sair-sistema,
+#tempoSessao,
+.periodo-atual,
+#menu-usuario {
     display: none !important;
 }
