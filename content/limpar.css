@@ -26,3 +26,9 @@ a[title="Instruções de Acesso ao Portal CAPES fora do IFC"],
 .subFormulario {
     display: none !important;
 }
+
+
+/* DIV Fórum */
+.descricaoOperacao {
+    display: none !important;
+}

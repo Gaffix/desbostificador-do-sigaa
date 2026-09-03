@@ -37,7 +37,7 @@ window.addEventListener('load', function() {
 const todosOsH4 = document.querySelectorAll('h4');
 
 todosOsH4.forEach(h4 => {
-    if (h4.innerText.includes('Turmas do Semestre') || h4.innerText.includes('Minhas atividades')) {
+    if (h4.innerText.includes('Turmas do Semestre') || h4.innerText.includes('Minhas atividades') || h4.innerText.includes('FÓRUM DO CURSO DE TÉCNICO EM INFORMÁTICA')) {
         h4.remove();
     }
 });
