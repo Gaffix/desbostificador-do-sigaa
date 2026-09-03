@@ -1,1 +1,10 @@
 /* Arquivo que limpa o estilo dos elementos indesejados */
+
+
+/* DIV Perfil Docente */
+
+#form_links\:forumCursos,
+a[title="Instruções de Acesso ao Portal CAPES fora do IFC"],
+#form_links\:buscarComunidadeVirtual {
+    display: none !important;
+}

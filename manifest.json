@@ -6,8 +6,9 @@
     "content_scripts": [
         {
         "matches": ["*://sig.ifc.edu.br/*"],
-        "css": ["limpar.css"],
-        "js": ["reorganizar.js"]
+        "css": ["/content/limpar.css"],
+        "js": ["/content/reorganizar.js"],
+        "run_at": "document_end"
         }
     ]
 }
