@@ -7,6 +7,7 @@ window.addEventListener('load', function() {
     document.querySelector('a[title*="CAPES"]')?.remove();
 });
 
+
 /* DIV menu-dropdown (Ensino, Pesquisa, Extensão...) */
 window.addEventListener('load', function() {
     const lixoDoMenu = [
@@ -16,19 +17,48 @@ window.addEventListener('load', function() {
         "Outros"
     ];
 
-    // 2. Seleciona todos os textos das opções de menu do SIGAA
     const itensDoMenu = document.querySelectorAll('.ThemeOfficeMainItemText, .ThemeOfficeMainFolderText');
 
-    // 3. Passa por cada item verificando se está na sua lista de lixo
     itensDoMenu.forEach(item => {
         const textoDoItem = item.innerText.trim(); // Pega o texto e tira espaços extras
         
         if (lixoDoMenu.includes(textoDoItem)) {
-            // Se achou na lista, sobe para a tag <tr> (a linha da tabela) e destrói ela
+            // Se achou na lista, sobe para a tag <td> (o item da tabela) e destrói ela
             const linhaDaTabela = item.closest('td');
             if (linhaDaTabela) {
                 linhaDaTabela.remove();
             }
+        }
+    });
+});
+
+
+// Body principal
+const todosOsH4 = document.querySelectorAll('h4');
+
+todosOsH4.forEach(h4 => {
+    if (h4.innerText.includes('Turmas do Semestre')) {
+        h4.remove();
+    }
+});
+
+
+window.addEventListener('load', function() {
+    const horario = document.querySelectorAll('th');
+    horario.forEach(horario => {
+        if (horario.innerText.includes('Horário')) {
+            horario.remove();
+        }
+    });
+
+    const centros = document.querySelectorAll('center');
+
+    centros.forEach(centro => {
+        //regra (Regex) que acha exatamente o formato (numero/numero/numero - numero/numero/numero)
+        const padraoData = /\(\d{2}\/\d{2}\/\d{4} - \d{2}\/\d{2}\/\d{4}\)/;
+        
+        if (padraoData.test(centro.innerText)) {
+            centro.remove();
         }
     });
 });

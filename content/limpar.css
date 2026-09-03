@@ -18,3 +18,8 @@ a[title="Instruções de Acesso ao Portal CAPES fora do IFC"],
 #menu-usuario {
     display: none !important;
 }
+
+/* DIV Body principal */
+.subFormulario {
+    display: none !important;
+}
