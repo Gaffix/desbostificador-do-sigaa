@@ -20,6 +20,7 @@ a[title="Instruções de Acesso ao Portal CAPES fora do IFC"],
 }
 
 /* DIV Body principal */
+#participantes,
 .subFormulario {
     display: none !important;
 }
